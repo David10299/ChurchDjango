@@ -91,7 +91,8 @@ USE_TZ = True
 # STATIC FILES
 # ------------------------------------------------------------
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR.parent, 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Use Whitenoise for production static files
@@ -112,3 +113,5 @@ SECURE_HSTS_PRELOAD = True
 # DEFAULT PRIMARY KEY
 # ------------------------------------------------------------
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+print("BASE_DIR:", BASE_DIR)
+print("STATICFILES_DIRS:", STATICFILES_DIRS)
