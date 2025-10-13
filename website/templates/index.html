@@ -1,0 +1,1149 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Divine Power of Christ Church in Shenandoah, PA — a welcoming, bilingual, nondenominational church centered on Jesus, Scripture, and community.">
+	<meta name="keywords" content="church, Shenandoah PA, non-denominational, Jesus, Bible, worship, ministries, community, gospel">
+	<meta name="author" content="Awaiken">
+	<!-- Page Title -->
+    <title>Divine Power of Christ Church | Shenandoah, PA</title>
+
+    <!-- Slick CSS -->
+<link href="{% static 'website/css/slick.css '%}" rel="stylesheet">
+	<!-- Favicon Icon -->
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'website/images/favicon.png' %}">
+	<!-- Google Fonts Css-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<!-- Bootstrap Css -->
+	<link href="{% static 'website/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+	<!-- SlickNav Css -->
+	<link href="{% static 'website/css/slicknav.min.css' %}" rel="stylesheet">
+	<!-- Swiper Css -->
+	<link rel="stylesheet" href="{% static 'website/css/swiper-bundle.min.css' %}">
+	<!-- Font Awesome Icon Css-->
+	<link href="{% static 'website/ '%}css/all.css" rel="stylesheet" media="screen">
+    <!-- Animated Css (use CDN v3 for compatibility with WOW.js) -->
+	<!-- Magnific Popup Core Css File -->
+	<link rel="stylesheet" href="{% static 'website/css/magnific-popup.css' %}">
+	<!-- Mouse Cursor Css File -->
+	<link rel="stylesheet" href="{% static 'website/css/mousecursor.css' %}">
+    <!-- Audio Css File -->
+	<link rel="stylesheet" href="{% static 'website/css/plyr.css'%}">
+	<!-- Main Custom Css -->
+	<link href="{% static 'website/css/custom.css '%}" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+
+
+    <style>
+        /* gallery.css - minimal styles for the gallery */
+.projects-section { padding-bottom: 95px; position: relative; 
+    margin-top: 5rem;
+}
+.section-title .sub-title { display:block; font-size: 17px; margin-bottom:8px; }
+.projects-slider-one { display:block; }
+
+/* project item */
+.project-item { padding: 8px; box-sizing: border-box; }
+.img-holder { position: relative; overflow: hidden; border-radius:6px; }
+.img-holder img { width:100%; height: auto; display:block; transition: transform 0.35s ease; }
+
+/* subtle zoom on hover */
+.img-holder:hover img { transform: scale(1.05); }
+
+/* hover overlay */
+.hover-portfolio {
+  position: absolute;
+  inset: 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: rgba(0,0,0,0.35);
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity .28s ease, transform .28s ease;
+}
+.img-holder:hover .hover-portfolio { opacity: 1; transform: translateY(0); }
+
+.hover-content p { color:#fff; margin:0; font-size:14px; }
+.hover-content a { color:#fff; text-decoration:none; opacity:0.95; margin-right:.5rem; }
+
+
+
+/* optional arrow container if you want external arrows */
+.project-arrows { display:flex; gap:8px; align-items:center; }
+
+/* Style the built-in slick arrows that live INSIDE the slider */
+.projects-slider-one .slick-prev,
+.projects-slider-one .slick-next {
+  z-index: 2;
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  border: 0;
+  border-radius: 5px;
+  background: #fff;
+  color: #2c2c2c;
+  font-size: 18px;
+  line-height: 55px;
+  text-align: center;
+  box-shadow: 0 10px 60px rgba(109,109,109,.2);
+  transition: all .3s ease-out;
+}
+
+/* position them on the sides of the slider (overlay style) */
+.projects-slider-one .slick-prev,
+.projects-slider-one .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.projects-slider-one .slick-prev { left: -20px; }   /* tweak to taste */
+.projects-slider-one .slick-next { right: -20px; }
+
+.projects-slider-one .slick-prev:hover,
+.projects-slider-one .slick-next:hover {
+  background-color: #ffbc1f;
+  box-shadow: 0 10px 60px rgba(237,206,56,.5);
+}
+
+/* optional: hide the empty external container since we’re not using it */
+.project-arrows { display: none; }
+
+@media (min-width: 468px) and (max-width: 766px) {
+  .about-img-2 {
+    display: none !important;
+  }
+}
+@media (min-width: 993px) {
+.verse-church .verse-church-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.col-lg-6 {
+  margin: 0 auto;
+}
+.verse-church .verse-church-btn {
+    margin-top:-20px;           /* spacing below paragraph */
+    align-self: flex-start;     /* ensures button aligns left */
+  }
+}
+/* put this in your head <style> or in custom.css */
+[id] {
+  scroll-margin-top: 100px; /* adjust 90px to be your header height + small gap */
+}
+html { scroll-behavior: smooth; } /* optional smooth scroll */
+    </style>
+        <style>
+        @media (max-width: 767px) {
+            .projects-section {
+                margin-top: -6rem;
+            }
+        }
+        /* Sticky header: keep the navbar visible on scroll */
+        header.main-header, header .header-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+            background: #000; /* ensure it covers content beneath */
+            margin-bottom:1rem;
+        }
+        /* Prevent content jump by ensuring header height is accounted for */
+        @supports (position: sticky) {
+            body {
+                padding-top: 0; /* header uses its own height; adjust if needed */
+            }
+        }
+        </style>
+</head>
+<body>
+
+    <!-- Preloader Start -->
+	<div class="preloader">
+		<div class="loading-container">
+			<div class="loading"></div>
+			<div id="loading-icon"><img src="{% static 'website/images/loader.svg '%}" alt=""></div>
+		</div>
+	</div>
+	<!-- Preloader End -->
+
+    <!-- Header Start -->
+	<header class="main-header">
+		<div class="header-sticky">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<!-- Logo Start -->
+					<a class="navbar-brand" href="./">
+						<img style="width:178px; padding-left:20px;"src="{% static 'website/images/DVNPWR2.png' %}" alt="Divine Power of Christ Church Logo">
+					</a>
+					<!-- Logo End -->
+
+					<!-- Main Menu Start -->
+					<div class="collapse navbar-collapse main-menu">
+                        <div class="nav-menu-wrapper">
+                            <ul class="navbar-nav mr-auto" id="menu">
+                                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#ministries">Ministries</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                                <li class="nav-item highlighted-menu"><a class="nav-link" href="https://cash.app/$DVNPWR">Give</a></li>                               
+                            </ul>
+                        </div>
+                        <!-- Let’s Start Button Start -->
+                        <div class="header-btn d-inline-flex">
+                            <a href="https://cash.app/$DVNPWR" target="_blank" rel="noopener noreferrer"class="btn-default">Give</a>
+                        </div>
+                        <!-- Let’s Start Button End -->
+					</div>
+					<!-- Main Menu End -->
+					<div class="navbar-toggle"></div>
+				</div>
+			</nav>
+			<div class="responsive-menu"></div>
+		</div>
+	</header>
+	<!-- Header End -->
+
+    <!-- Hero Section Start -->
+	<div id="home"class="hero parallaxie">
+		<div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <!-- Hero Content Start -->
+                    <div class="hero-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp" data-wow-delay="0.6s">DIVINE POWER OF CHRIST CHURCH</h3>
+                            <h1 class="wow fadeInUp" data-wow-delay="0.6s" data-cursor="-opaque">The greatest sermon <br>is love in action </h1>
+                            <p class="wow fadeInUp" data-wow-delay="0.6s">Based in Shenandoah and Lebanon, PA, we are a bilingual, nondenominational church dedicated to serving our community. We exist to be the hands and feet of Jesus, making the love of Christ visible in practical ways.</p>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Hero Content Body Start -->
+                        <div class="hero-content-body wow fadeInUp" data-wow-delay="0.6s">
+                            <a href="#services" class="btn-default"><span>Our Services</span></a>
+                            <a href="#prayers" class="btn-default btn-highlighted"><span>Prayer Request</span></a>
+                        </div>
+                        <!-- Hero Content Body End -->
+                    </div>
+                    <!-- Hero Content End -->
+                </div>
+            </div>
+        </div>
+        <div class="down-arrow">
+			<a href="#home-about"><i class="fa-solid fa-arrow-down-long"></i></a>
+		</div>
+	</div>
+	<!-- Hero Section End -->
+
+   <!-- Our Scrolling Ticker Section Start -->
+<div class="our-scrolling-ticker">
+    <!-- Scrolling Ticker Start -->
+    <div class="scrolling-ticker-box">
+        <div class="scrolling-content">
+            <span><img src="{% static 'website/images/icon-sparkles.svg' %}" alt="">Love your neighbor as yourself</span>
+            <span><img src="{% static 'website/images/icon-sparkles.svg' %}" alt="">Love your neighbor as yourself</span>
+            <span><img src="{% static 'website/images/icon-sparkles.svg' %}" alt="">Love your neighbor as yourself</span>
+            <span><img src="{% static 'website/images/icon-sparkles.svg' %}" alt="">Love your neighbor as yourself</span>
+            <span><img src="{% static 'website/images/icon-sparkles.svg' %}" alt="">Love your neighbor as yourself</span>
+        </div>
+
+        <div class="scrolling-content">
+              <span><img src="{% static 'website/images/icon-sparkles.svg' %}" alt="">Love your neighbor as yourself</span>
+            <span><img src="{% static 'website/images/icon-sparkles.svg' %}" alt="">Love your neighbor as yourself</span>
+            <span><img src="{% static 'website/images/icon-sparkles.svg' %}" alt="">Love your neighbor as yourself</span>
+            <span><img src="{% static 'website/images/icon-sparkles.svg' %}" alt="">Love your neighbor as yourself</span>
+            <span><img src="{% static 'website/images/icon-sparkles.svg' %}" alt="">Love your neighbor as yourself</span>
+        </div>
+    </div>
+</div>
+<!-- Scrolling Ticker Section End -->
+
+
+    <!-- About Us Section Start -->
+	<div class="about-us" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <!-- About Image Start -->
+                    <div class="about-image">
+                        <div class="about-img-1">
+                            <figure class="image-anime wow fadeInUp" data-wow-delay="0.6s">
+                                <img src="{% static 'website/images/rosi.jpg' %}" alt="">
+                            </figure>
+                        </div>
+
+                        <div class="about-img-2">
+                            <figure class="image-anime wow fadeInUp" data-wow-delay="0.6s">
+                                <img src="{% static 'website/images/pastors.jpeg' %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- About Image End -->
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- About Content Start -->
+                    <div class="about-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp" data-wow-delay="0.6s">about us</h3>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.6s" data-cursor="-opaque">A church family in <span>Shenandoah</span> centered on Christ</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.6s">We’re a welcoming, bilingual (English/Spanish) congregation. We believe the Bible is God’s Word, salvation is by grace through faith in Jesus, and the Holy Spirit empowers us to live and serve.</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.6s">Our heart is simple: worship Jesus, make disciples, and bless our town through practical love, prayer, and consistent presence.</p>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- About Content List Start -->
+                        <div class="about-content-body">
+                            <!-- About List Item Start -->
+                            <div class="about-list-item wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="icon-box">
+                                    <img src="{% static 'website/' %}images/icon-about-list-1.svg" alt="">
+                                </div>
+                                <div class="about-list-item-content">
+                                    <h3>share the gospel</h3>
+                                </div>
+                            </div>
+                            <!-- About List Item End -->
+
+                            <!-- About List Item Start -->
+                            <div class="about-list-item wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="icon-box">
+                                    <img src="{% static 'website/' %}images/icon-about-list-2.svg" alt="">
+                                </div>
+                                <div class="about-list-item-content">
+                                    <h3>grow in scripture</h3>
+                                </div>
+                            </div>
+                            <!-- About List Item End -->
+
+                            <!-- About List Item Start -->
+                            <div class="about-list-item wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="icon-box">
+                                    <img src="{% static 'website/' %}images/icon-about-list-3.svg" alt="">
+                                </div>
+                                <div class="about-list-item-content">
+                                    <h3>serve our neighbors</h3>
+                                </div>
+                            </div>
+                            <!-- About List Item End -->
+
+                            <!-- About List Item Start -->
+                            <div class="about-list-item wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="icon-box">
+                                    <img src="{% static 'website/' %}images/icon-about-list-4.svg" alt="">
+                                </div>
+                                <div class="about-list-item-content">
+                                    <h3>build real community</h3>
+                                </div>
+                            </div>
+                            <!-- About List Item End -->
+                        </div>
+                        <!-- About Content List End -->
+
+
+                        <!-- About Us Footer Start -->
+                        <div class="about-us-footer wow fadeInUp" data-wow-delay="0.6s">
+                            <a href="#services" class="btn-default">Our Services</a>
+                        </div>
+                        <!-- About Us Footer End -->
+                    </div>
+                    <!-- About Content End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Us Section End -->
+
+    <!-- Verse Church Section Start -->
+    <div id="prayer"class="verse-church">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- Verse Church Content Start -->
+                    <div class="verse-church-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp" data-wow-delay="0.6s">SPEAKING REQUESTS</h3>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.6s" data-cursor="-opaque" style="color: white;">Invite Pastor <span>Marcus to Speak </span></h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.25s">Interested in having Pastor Marcus speak at your church or event? His heart is to uplift believers, strengthen leaders, 
+                                and point every message back to the transforming power of Jesus Christ. Let’s partner together to impact lives for the Kingdom.</p>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Verse Church Btn Start -->
+                        <div class="verse-church-btn wow fadeInUp" data-wow-delay="0.6s">
+                            <a href="https://forms.gle/E4t2t41K8aQNZXYd9" class="btn-default">Invite to Speak</a>
+                        </div>
+                        <!-- Verse Church Btn End -->
+                    </div>
+                    <!-- Verse Church Content End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Verse Church Section End -->
+
+      <!-- Our Event Section Start -->
+    <div id="services" class="our-event">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="event-content"style="margin-top: -3rem;">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp" data-wow-delay="0.6s">LOCATION AND TIME</h3>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.6s" data-cursor="-opaque">our services - <span>Sundays in Lebanon & Shenandoah</span></h2>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Event Body Start -->
+                        <div class="event-body">
+                            <!-- Event Item Start -->
+                            <div class="event-item wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                </div>
+                                <div class="event-item-content">
+                                    <h4 style ="font-size: calc(1.185rem + .3vw);">Lebanon - 11pm</h4>
+                                    <p>Oct 19, 2025 — 6:00 pm</p>
+                                </div>
+                            </div>
+                            <!-- Event Item End -->
+
+                            <!-- Event Item Start -->
+                            <div class="event-item wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="event-item-content">
+                                    <h4 style ="font-size: calc(1.185rem + .3vw);">Shenandoah - 10pm</h4>
+                                    <p>38 E Oak St, Shenandoah, PA 17976</p>
+                                </div>
+                            </div>
+                            <!-- Event Item End -->
+                        </div>
+                        <!-- Event Body End -->
+
+                        <!-- Event Footer Start -->
+                        <div class="event-footer">
+                            <p class="wow fadeInUp" data-wow-delay="0.6s">Come experience worship, practical teaching, and a genuine community that loves Jesus. 
+                                Whether you visit our Lebanon or Shenandoah location, 
+                                you’ll find a place to belong, grow, and encounter God’s presence together.</p>
+                        </div>
+                        <!-- Event Footer End -->
+
+                        <!-- Event Btn Start -->
+                        <div class="event-btn wow fadeInUp" data-wow-delay="0.6s">
+                            <a href="#ministries" class="btn-default"style="margin-top: -13px;
+  margin-bottom: 40px;">Our Ministries</a>
+                        </div>
+                        <!-- Event Btn End -->
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="event-image">
+                        <figure class="image-anime wow fadeInUp" data-wow-delay="0.6s">
+                            <img src="{% static 'website/images/building3.png' %}" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Event Section End -->
+
+
+
+  <!--====== Gallery ======-->
+<section id="gallery" class="projects-section pt-130 p-r z-1 wow fadeInUp">
+  <div class="container">
+    <div class="row align-items-end">
+      <div class="col-lg-8 col-md-9 wow fadeInLeft">
+        <div class="section-title section-title-left mb-60">
+          <span class="sub-title">From clothing drives to local gatherings, we’re here to lend a hand, share a smile, and make our community feel a little more like home.</span>
+          <h2>Our Work <span>in the Community </span></h2>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-3 wow fadeInRight">
+        <div class="project-arrows mb-60 float-md-right"></div>
+      </div>
+    </div>
+    <div class="projects-slider-one wow fadeInUp">
+
+     <!-- Repeatable Project Item -->
+<div class="project-item wow fadeInUp">
+  <div class="img-holder">
+    <img src="{% static 'website/images/image0.jpeg' %}" alt="Gallery Image">
+    <div class="hover-portfolio">
+      <div class="hover-content">
+        <p><a href="#">Serving</a> <a href="#">Together</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-item wow fadeInDown">
+  <div class="img-holder">
+    <img src="{% static 'website/images/image1.jpeg' %}" alt="Gallery Image">
+    <div class="hover-portfolio">
+      <div class="hover-content">
+        <p><a href="#">Community</a> <a href="#">First</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-item wow fadeInDown">
+  <div class="img-holder">
+    <img src="{% static 'website/images/image2.jpeg' %}" alt="Gallery Image">
+    <div class="hover-portfolio">
+      <div class="hover-content">
+        <p><a href="#">Helping</a> <a href="#">Hands</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-item wow fadeInDown">
+  <div class="img-holder">
+    <img src="{% static 'website/images/image3.jpeg' %}" alt="Gallery Image">
+    <div class="hover-portfolio">
+      <div class="hover-content">
+        <p><a href="#">Faith</a> <a href="#">In Action</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-item wow fadeInDown">
+  <div class="img-holder">
+    <img src="{% static 'website/images/image4.jpeg' %}" alt="Gallery Image">
+    <div class="hover-portfolio">
+      <div class="hover-content">
+        <p><a href="#">Love</a> <a href="#">Others</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-item wow fadeInDown">
+  <div class="img-holder">
+    <img src="{% static 'website/images/image5.jpeg' %}" alt="Gallery Image">
+    <div class="hover-portfolio">
+      <div class="hover-content">
+        <p><a href="#">Hope</a> <a href="#">Together</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-item wow fadeInDown">
+  <div class="img-holder">
+    <img src="{% static 'website/images/image6.jpeg' %}" alt="Gallery Image">
+    <div class="hover-portfolio">
+      <div class="hover-content">
+        <p><a href="#">Stronger</a> <a href="#">Together</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-item wow fadeInDown">
+  <div class="img-holder">
+    <img src="{% static 'website/images/image7.jpeg' %}" alt="Gallery Image">
+    <div class="hover-portfolio">
+      <div class="hover-content">
+        <p><a href="#">Serving</a> <a href="#">Others</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-item wow fadeInDown">
+  <div class="img-holder">
+    <img src="{% static 'website/images/image8.jpeg' %}" alt="Gallery Image">
+    <div class="hover-portfolio">
+      <div class="hover-content">
+        <p><a href="#">Faithful</a> <a href="#">Service</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- (no image9) -->
+<div class="project-item wow fadeInDown">
+  <div class="img-holder">
+    <img src="{% static 'website/images/image10.jpeg' %}" alt="Gallery Image">
+    <div class="hover-portfolio">
+      <div class="hover-content">
+        <p><a href="#">United</a> <a href="#">Together</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+<!--====== End Gallery Section ======-->
+
+ <!-- Verse Church Section Start -->
+    <div id="prayer"class="verse-church">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- Verse Church Content Start -->
+                    <div class="verse-church-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp" data-wow-delay="0.6s">PRAYER PETITIONS</h3>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.6s" data-cursor="-opaque" style="color: white;">God Still <span>Answers Prayer</span></h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.25s">When life feels heavy, prayer reminds us that God is still in control. Share your need, 
+                                and let’s pray together for His strength, favor, and restoration.</p>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Verse Church Btn Start -->
+                        <div class="verse-church-btn wow fadeInUp" data-wow-delay="0.6s">
+                            <a href="https://forms.gle/W2qPHKsqq7zbopo1A" class="btn-default">Send Your Prayer</a>
+                        </div>
+                        <!-- Verse Church Btn End -->
+                    </div>
+                    <!-- Verse Church Content End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Verse Church Section End -->
+<!-- Join Worship Section Start -->
+<div id="ministries"class="join-worship">
+    <div class="container">
+        <div class="row section-row">
+            <div class="col-lg-12">
+                <!-- Section Title Start -->
+                <div class="section-title">
+                    <h3 class="wow fadeInUp">OUR MINISTRIES </h3>
+                    <h2>Discover your place to belong.</h2>
+                </div>
+                <!-- Section Title End -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <!-- Highlighted Worship Item Start -->
+                    <div class="highlighted-worship-item wow fadeInUp" data-wow-delay="0.6s">
+                    <!-- Highlighted Worship Featured Image Start -->
+                    <div class="highlighted-worship-image">
+                        <figure>
+                            <a href="#" class="image-anime wow fadeInUp" data-wow-delay="0.6s" data-cursor-text="View">
+                                <img src="https://i.pinimg.com/736x/a2/f2/90/a2f2909c9f5e6dfdfa70ed605d17fd43.jpg" alt="">
+                            </a>
+                        </figure>
+                    </div>
+                    <!-- Highlighted Worship Featured Image End -->
+
+                    <!-- Highlighted Worship Body Start -->
+                    <div class="highlighted-worship-body">
+                        <!-- Highlighted Worship Content Start -->
+                        <div class="highlighted-worship-content">
+                            <h3>men’s ministry</h3>
+                            <p>Men grow through Bible study, prayer, fellowship, and serving together.</p>
+                        </div>
+                        <!-- Highlighted Worship Content End -->
+                        <div class="highlighted-worship-btn">
+                            <a href="#contact" class="readmore-btn"><img src="{% static 'website/images/arrow-white.svg '%}" alt=""></a>
+                        </div>
+                    </div>
+                    <!-- Highlighted Worship Body End -->
+                </div>
+                <!-- Highlighted Worship Item End -->
+            </div>
+            <div class="col-lg-6">
+                <div class="worship-box">
+                    <!-- Worship Item Start -->
+                    <div class="worship-item wow fadeInUp" data-wow-delay="0.25s">
+                        <!-- Worship Image Start -->
+                        <div class="worship-image">
+                            <figure>
+                                <a href="#" class="image-anime wow fadeInUp" data-cursor-text="View">
+                                    <img src="https://images.unsplash.com/photo-1628257228803-ad6c3d697f44?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                        <!-- Worship Image End -->
+
+                        <!-- Worship Body Start -->
+                        <div class="worship-body">
+                            <!-- Worship Content Start -->
+                            <div class="worship-content">
+                                <h3>women’s ministry</h3>
+                                <p>Women gather for Bible study, prayer, fellowship, and encouragement.</p>
+                            </div>
+                            <!-- Worship Content End -->
+
+                            <!-- Worship Btn Start -->
+                            <div class="worship-btn">
+                                <a href="#contact" class="readmore-btn"><img src="{% static 'website/images/arrow-white.svg '%}" alt=""></a>
+                            </div>
+                            <!-- Worship Btn End -->
+                        </div>
+                        <!-- Worship Body End -->
+                    </div>
+                    <!-- Worship Item End -->
+
+                    <!-- Worship Item Start -->
+                    <div class="worship-item wow fadeInUp" data-wow-delay="0.5s">
+                        <!-- Worship Image Start -->
+                        <div class="worship-image">
+                            <figure>
+                                <a href="#" class="image-anime wow fadeInUp" data-cursor-text="View">
+                                    <img src="https://images.unsplash.com/flagged/photo-1567116681178-c326fa4e2c8b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                        <!-- Worship Image End -->
+
+                        <!-- Worship Body Start -->
+                        <div class="worship-body">
+                            <!-- Worship Content Start -->
+                            <div class="worship-content">
+                                <h3>children’s ministry</h3>
+                                <p>Kids learn about Jesus through lessons, songs, crafts, and play.</p>
+                            </div>
+                            <!-- Worship Content End -->
+
+                            <!-- Worship Btn Start -->
+                            <div class="worship-btn">
+                                <a href="#contact" class="readmore-btn"><img src="{% static 'website/images/arrow-white.svg '%}" alt=""></a>
+                            </div>
+                            <!-- Worship Btn End -->
+                        </div>
+                        <!-- Worship Body End -->
+                    </div>
+                    <!-- Worship Item End -->
+
+                    <!-- Worship Item Start -->
+                    <div class="worship-item wow fadeInUp" data-wow-delay="0.75s">
+                        <!-- Worship Image Start -->
+                        <div class="worship-image">
+                            <figure>
+                                <a href="#" class="image-anime wow fadeInUp" data-cursor-text="View">
+                                    <img src="https://images.unsplash.com/photo-1542327546-881c2a68a4d0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                        <!-- Worship Image End -->
+
+                        <!-- Worship Body Start -->
+                        <div class="worship-body">
+                            <!-- Worship Content Start -->
+                            <div class="worship-content">
+                                <h3>young adults ministry</h3>
+                                <p>Young adults grow in faith through Bible study, worship, and community.</p>
+                            </div>
+                            <!-- Worship Content End -->
+
+                            <!-- Worship Btn Start -->
+                            <div class="worship-btn">
+                                <a href="#contact" class="readmore-btn"><img src="{% static 'website/images/arrow-white.svg '%}" alt=""></a>
+                            </div>
+                            <!-- Worship Btn End -->
+                        </div>
+                        <!-- Worship Body End -->
+                    </div>
+                    <!-- Worship Item End -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Join Worship Section End -->
+
+
+    <!-- Our Counter Section Start -->
+    <div class="our-counter wow fadeInUp">
+        <div class="container">
+            <div class="row counter-box">
+                <div class="col-lg-3 col-md-6">
+                    <!-- Counter Item Start -->
+                    <div class="counter-item">
+                        <!-- Counter Title Start -->
+                        <div class="counter-title">
+                            <h2><span>200</span>+</h2>
+                        </div>
+                        <!-- Counter Title End -->                     
+
+                        <!-- Counter Content Start -->
+                        <div class="counter-content">
+                            <h3>gatherings each year</h3>
+                            <p>Week by week we worship, pray, and serve together.</p>
+                        </div>
+                        <!-- Counter Content End -->
+                    </div>
+                    <!-- Counter Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Counter Item Start -->
+                    <div class="counter-item">
+                        <!-- Counter Title Start -->
+                        <div class="counter-title">
+                            <h2><span>5</span>+</h2>
+                        </div>
+                        <!-- Counter Title End -->                     
+
+                        <!-- Counter Content Start -->
+                        <div class="counter-content">                            
+                            <h3>small groups</h3>
+                            <p>Spaces to study Scripture, pray, and build friendships.</p>
+                        </div>
+                        <!-- Counter Content End -->
+                    </div>
+                    <!-- Counter Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Counter Item Start -->
+                    <div class="counter-item">
+                        <!-- Counter Title Start -->
+                        <div class="counter-title">
+                            <h2><span>2</span></h2>                            
+                        </div>
+                        <!-- Counter Title End -->                     
+
+                        <!-- Counter Content Start -->
+                        <div class="counter-content">
+                            <h3>languages</h3>
+                            <p>English y Español — one family in Christ.</p>
+                        </div>
+                        <!-- Counter Content End -->
+                    </div>
+                    <!-- Counter Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Counter Item Start -->
+                    <div class="counter-item">
+                        <!-- Counter Title Start -->
+                        <div class="counter-title">
+                            <h2><span >1</span></h2>
+                        </div>
+                        <!-- Counter Title End -->                     
+
+                        <!-- Counter Content Start -->
+                        <div class="counter-content">
+                            <h3>great commission</h3>
+                            <p>Make disciples of Jesus at home and to the ends of the earth.</p>
+                        </div>
+                        <!-- Counter Content End -->
+                    </div>
+                    <!-- Counter Item End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Counter Section End -->
+
+    <!-- Our Mission Section Start -->
+    <div id="belief" class="our-mission">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="mission-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">Our Belief</h3>
+                            <h2 class="wow fadeInUp" data-cursor="-opaque">Everything we believe <span>begins and ends </span>with Jesus.</h2>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Mission Content Body Start -->
+                        <div class="mission-content-body">
+                            <h3 class="wow fadeInUp" data-wow-delay="0.25s">We exist to glorify God by knowing Jesus and making Him known. He came to earth to offer himself for our sin and although He was killed, He defeated death by coming back to life when God raised Him. He ascended to heaven where He now sits at the right hand of God.</h3>
+                            <p class="wow fadeInUp" data-wow-delay="0.5s">We believe in one God—Father, Son, and Holy Spirit. We believe Jesus Christ is the Son of God and the perfect expression of God’s love. Through His life, death, and resurrection, He paid the full price for our sins. 
+                                Anyone who believes in Him receives forgiveness and eternal life, made new by the power of the Holy Spirit.</p>
+                        </div>
+                        <!-- Mission Content Body End -->
+
+                        <!-- Mission Content Footer Start -->
+                        <div class="mission-content-footer wow fadeInUp" data-wow-delay="0.75s">
+                            <a href="#contact" class="btn-default">Contact Us</a>
+                        </div>
+                        <!-- Mission Content Footer End -->
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Mission Image Start -->
+                    <div class="mission-image">
+                        <!-- Mission Image Start -->
+                        <div class="mission-img">
+                            <figure class="image-anime wow fadeInUp">
+                                <img src="{% static 'website/images/building.jpeg' %}" alt="">
+                            </figure>
+                        </div>
+                        <!-- Mission Image End -->
+
+                        <!-- Mission Life Circle Start -->
+                        <div class="mission-life-circle">
+                            <img src="{% static 'website/images/dcircle.png' %}" alt="">
+                        </div>
+                        <!-- Mission Life Circle End -->
+                    </div>
+                    <!-- Mission Image End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Mission Section End -->
+
+   
+
+    <!-- Service Ticker Start -->
+	<div class="service-ticker wow fadeInUp">
+		<div class="scrolling-ticker">
+            <div class="scrolling-ticker-box">
+                <div class="scrolling-content">
+                    <span><img src="{% static 'website/images/icon-asterisk.svg' %}" alt="">Jesus Changes Everything</span>					
+                    <span><img src="{% static 'website/images/icon-asterisk.svg' %}" alt="">Grace for Every Season</span>				
+                    <span><img src="{% static 'website/images/icon-asterisk.svg' %}" alt="">Bible-Centered</span>				
+                    <span><img src="{% static 'website/images/icon-asterisk.svg' %}" alt="">Spirit-Empowered</span>				
+                    <span><img src="{% static 'website/images/icon-asterisk.svg' %}" alt="">On Mission Together</span>				
+                </div>
+
+                <div class="scrolling-content">
+                    <span><img src="{% static 'website/images/icon-asterisk.svg' %}" alt="">Prayer First</span>					
+                    <span><img src="{% static 'website/images/icon-asterisk.svg' %}" alt="">Families Flourish</span>				
+                    <span><img src="{% static 'website/images/icon-asterisk.svg' %}" alt="">Hope in Christ</span>				
+                    <span><img src="{% static 'website/images/icon-asterisk.svg' %}" alt="">Serve Shenandoah</span>				
+                    <span><img src="{% static 'website/images/icon-asterisk.svg' %}" alt="">All Are Welcome</span>
+                </div>
+            </div>
+        </div>
+	</div>
+	<!-- Service Ticker End -->
+
+    
+
+   
+
+    <!-- CTA Box Section Start -->
+    <div id="contact"class="cta-box">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-9">
+                    <!-- CTA Box Content Start -->
+                    <div class="cta-box-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h2 data-cursor="-opaque">Get Involved: Join a Ministry, Serve, or Reach Out.</h2>
+                        </div>
+                        <!-- Section Title End -->
+                    </div>
+                    <!-- CTA Box Content End -->
+                </div>
+
+                <div class="col-md-3">
+                    <!-- CTA Box Btn Start -->
+                    <div class="cta-box-btn wow fadeInUp">
+                        <a href="https://forms.gle/3c4RfVouV2KfzHs5A" class="btn-default btn-highlighted">Join a Group</a>
+                    </div>
+                    <!-- CTA Box Btn End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CTA Box Section End -->
+
+  
+
+      
+
+
+    <!-- Footer Start -->
+    <footer id="footer" class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <!-- About Footer Start -->
+                    <div class="about-footer">
+                        <!-- Footer Logo Start -->
+                        <div class="footer-logo wow fadeInUp">
+                            <img src="{% static 'website/images/DVNPWR2.PNG' %}" alt="">
+                        </div>
+                        <!-- Footer Logo End -->
+
+                        <!-- About Footer Content Start -->
+                        <div class="about-footer-content wow fadeInUp">
+                            <p>Based in Shenandoah and Lebanon, PA, we are a bilingual, nondenominational church dedicated to serving our community. 
+                                We exist to be the hands and feet of Jesus, making the love of Christ visible in practical ways.</p>
+                        </div>
+                        <!-- Footer Social Links Start -->
+                        <div class="footer-social-links">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>                                                                
+                            </ul>
+                        </div>
+                        <!-- Footer Social Links End -->
+                        
+                    </div>
+                    <!-- About Footer End -->
+                </div>
+                
+                <div class="col-lg-2 col-md-3 col-6">
+                    <!-- About Links Start -->
+                    <div class="footer-links">
+                        <h3 class ="wow fadeInUp">quick links</h3>
+                        <ul>
+                            <li><a class ="wow fadeInUp"href="#">Home</a></li>
+                            <li><a class ="wow fadeInUp"href="#about">About</a></li>
+                            <li><a class ="wow fadeInUp"href="#ministries">Ministries</a></li>
+                            <li><a class ="wow fadeInUp"href="#services">Services</a></li>
+                            <li><a class ="wow fadeInUp"href="#contact">Join a Group</a></li>
+                        </ul>
+                    </div>
+                    <!-- About Links End -->
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                   
+                </div>
+
+                <div class="col-lg-3 col-md-5">
+                    <!-- About Links Start -->
+                    <div class="footer-contact">
+                        <h3 class ="wow fadeInUp">contact</h3>
+                        <!-- Footer Contact Details Start -->
+                        <div class="footer-contact-details">
+                            <!-- Footer Info Box Start -->
+                            <div class="footer-info-box">
+                                <div class="icon-box">
+                                    <img class ="wow fadeInUp" src="{% static 'website/images/icon-phone.svg' %}" alt="">
+                                </div>
+                                <div class="footer-info-box-content">
+                                    <p class ="wow fadeInUp">(570) 462-1859</p>
+                                </div>                                
+                            </div>
+                            <!-- Footer Info Box End -->
+
+                            <!-- Footer Info Box Start -->
+                            <div class="footer-info-box">
+                                <div class="icon-box">
+                                    <img class ="wow fadeInUp"src="{% static 'website/images/icon-mail.svg' %}" alt="">
+                                </div>
+                                <div class="footer-info-box-content">
+                                    <p class ="wow fadeInUp">info@dpccpa.org</p>
+                                </div>
+                            </div>
+                            <!-- Footer Info Box End -->
+
+                            <!-- Footer Info Box Start -->
+                            <div class="footer-info-box">
+                                <div class="icon-box">
+                                    <img class ="wow fadeInUp"src="{% static 'website/images/icon-location.svg' %}" alt="">
+                                </div>
+                                <div class="footer-info-box-content">
+                                    <p class ="wow fadeInUp">38 E Oak St, Shenandoah, PA 17976</p>
+                                </div>                                
+                            </div>
+                            <!-- Footer Info Box End -->
+                        </div>
+                        <!-- Footer Contact Details End -->
+                    </div>
+                    <!-- About Links End -->
+                </div>
+            </div>
+
+            <!-- Footer Copyright Section Start -->
+            <div class="footer-copyright">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <!-- Footer Copyright Start -->
+                        <div class="footer-copyright-text">
+                            <p class ="wow fadeInUp">© 2025 Divine Power of Christ Church. All rights reserved.</p>
+                        </div>
+                        <!-- Footer Copyright End -->
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Copyright Section End -->
+        </div>
+     </footer>
+    <!-- Footer End -->
+<!-- jQuery (single copy) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Slick JS (after jQuery) -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<!-- Optional WOW -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.3/wow.min.js"></script>
+
+<!-- KEEP your other local scripts (bootstrap, plugins, function.js) AFTER Slick -->
+<script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'website/js/validator.min.js' %}"></script>
+<script src="{% static 'website/js/jquery.slicknav.js' %}"></script>
+<script src="{% static 'website/js/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'website/js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'website/js/jquery.counterup.min.js' %}"></script>
+<script src="{% static 'website/js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'website/js/SmoothScroll.js' %}"></script>
+<script src="{% static 'website/js/parallaxie.js' %}"></script>
+<script src="{% static 'website/js/gsap.min.js' %}"></script>
+<script src="{% static 'website/js/magiccursor.js' %}"></script>
+<script src="{% static 'website/js/SplitText.js' %}"></script>
+<script src="{% static 'website/js/ScrollTrigger.min.js' %}"></script>
+<script src="{% static 'website/js/jquery.mb.YTPlayer.min.js' %}"></script>
+<script src="{% static 'website/js/plyr.js' %}"></script>
+<script src="{% static 'website/js/wow.js' %}"></script>
+
+<!-- your custom script(s) last -->
+<script src="{% static 'website/js/function.js' %}"></script>
+
+<!-- slider init (after jQuery + Slick + plugins) -->
+<script>
+  (function($){
+    $(function(){
+      if (!$.fn.slick) {
+        console.error('Slick is not available. Check that slick.min.js loaded after jQuery.');
+        return;
+      }
+      $('.projects-slider-one').not('.slick-initialized').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        prevArrow: '<button type="button" class="slick-prev" aria-label="Previous">‹</button>',
+        nextArrow: '<button type="button" class="slick-next" aria-label="Next">›</button>',
+        responsive: [
+          { breakpoint: 992, settings: { slidesToShow: 2 } },
+          { breakpoint: 576, settings: { slidesToShow: 1 } }
+        ]
+      });
+
+      if (window.WOW) { new WOW().init(); }
+    });
+  })(jQuery);
+</script>
+</body>
+</html>
