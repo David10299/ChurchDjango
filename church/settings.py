@@ -91,11 +91,11 @@ USE_TZ = True
 # STATIC FILES
 # ------------------------------------------------------------
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR.parent, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Use Whitenoise for production static files
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # ------------------------------------------------------------
 # SECURITY HEADERS (Recommended for Production)
