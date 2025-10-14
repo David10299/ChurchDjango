@@ -91,6 +91,7 @@ USE_TZ = True
 # STATIC FILES
 # ------------------------------------------------------------
 # This is where Django looks for your static files during development
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
