@@ -90,11 +90,15 @@ USE_TZ = True
 # ------------------------------------------------------------
 # STATIC FILES
 # ------------------------------------------------------------
-STATIC_URL = '/static/'
+# This is where Django looks for your static files during development
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
-] 
+]
 
+# This is where collectstatic will put all files for production
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Whitenoise serves static files directly from STATIC_ROOT
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # ------------------------------------------------------------
