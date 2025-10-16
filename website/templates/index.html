@@ -10,10 +10,20 @@
 	<meta name="keywords" content="church, Shenandoah PA, non-denominational, Jesus, Bible, worship, ministries, community, gospel">
 	<meta name="author" content="Awaiken">
 	<!-- Page Title -->
-    <title>Divine Power of Christ Church | Shenandoah, PA</title>
+    <title>Divine Power of Christ Church</title>
 
-<!-- Favicon -->
-<link rel="shortcut icon" type="image/x-icon" href="{% static 'website/images/favicon.png' %}">
+    <!-- Open Graph (for social previews) -->
+<meta property="og:title" content="Divine Power of Christ Church | Shenandoah, PA">
+<meta property="og:description" content="A bilingual, nondenominational church serving Shenandoah and Lebanon, PA. Join us Sundays at 10AM and 1PM!">
+<meta property="og:image" content="{% static 'website/images/dcircle.png' %}">
+<meta property="og:url" content="https://churchdjango.onrender.com">
+<meta property="og:type" content="website">
+
+<link rel="apple-touch-icon" sizes="180x180" href="{% static 'website/images/apple-touch-icon.png' %}">
+<link rel="icon" type="image/png" sizes="32x32" href="{% static 'website/images/favicon-32x32.png' %}">
+<link rel="icon" type="image/png" sizes="16x16" href="{% static 'website/images/favicon-16x16.png' %}">
+<link rel="manifest" href="{% static 'website/images/site.webmanifest' %}">
+
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -134,7 +144,7 @@
     align-self: flex-start;     /* ensures button aligns left */
   }
 }
-/* put this in your head <style> or in custom.css */
+
 [id] {
   scroll-margin-top: 100px; /* adjust 90px to be your header height + small gap */
 }
@@ -198,7 +208,7 @@ html { scroll-behavior: smooth; } /* optional smooth scroll */
 					<div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#ministries">Ministries</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
@@ -230,14 +240,14 @@ html { scroll-behavior: smooth; } /* optional smooth scroll */
                     <div class="hero-content">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <h3 class="wow fadeInUp" data-wow-delay="0.6s">DIVINE POWER OF CHRIST CHURCH</h3>
-                            <h1 class="wow fadeInUp" data-wow-delay="0.6s" data-cursor="-opaque">The greatest sermon <br>is love in action </h1>
-                            <p class="wow fadeInUp" data-wow-delay="0.6s">Based in Shenandoah and Lebanon, PA, we are a bilingual, nondenominational church dedicated to serving our community. We exist to be the hands and feet of Jesus, making the love of Christ visible in practical ways.</p>
+                            <h3 class="wow fadeInUp" data-wow-delay="0.2s">DIVINE POWER OF CHRIST CHURCH</h3>
+                            <h1 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">The greatest sermon <br>is love in action </h1>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Based in Shenandoah and Lebanon, PA, we are a bilingual, nondenominational church dedicated to serving our community. We exist to be the hands and feet of Jesus, making the love of Christ visible in practical ways.</p>
                         </div>
                         <!-- Section Title End -->
 
                         <!-- Hero Content Body Start -->
-                        <div class="hero-content-body wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="hero-content-body wow fadeInUp" data-wow-delay="0.2s">
                             <a href="#services" class="btn-default"><span>Our Services</span></a>
                             <a href="#speak" class="btn-default btn-highlighted"><span>Invite to Speak</span></a>
                         </div>
@@ -285,13 +295,13 @@ html { scroll-behavior: smooth; } /* optional smooth scroll */
                     <!-- About Image Start -->
                     <div class="about-image">
                         <div class="about-img-1">
-                            <figure class="image-anime wow fadeInUp" data-wow-delay="0.6s">
+                            <figure class="image-anime wow fadeInUp" data-wow-delay="0.2s">
                                 <img src="{% static 'website/images/rosi.jpg' %}" alt="">
                             </figure>
                         </div>
 
                         <div class="about-img-2">
-                            <figure class="image-anime wow fadeInUp" data-wow-delay="0.6s">
+                            <figure class="image-anime wow fadeInUp" data-wow-delay="0.2s">
                                 <img src="{% static 'website/images/pastors.jpeg' %}" alt="">
                             </figure>
                         </div>
@@ -304,17 +314,17 @@ html { scroll-behavior: smooth; } /* optional smooth scroll */
                     <div class="about-content">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <h3 class="wow fadeInUp" data-wow-delay="0.6s">about us</h3>
-                            <h2 class="wow fadeInUp" data-wow-delay="0.6s" data-cursor="-opaque">A church family in <span>Shenandoah</span> centered on Christ</h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.6s">We’re a welcoming, bilingual (English/Spanish) congregation. We believe the Bible is God’s Word, salvation is by grace through faith in Jesus, and the Holy Spirit empowers us to live and serve.</p>
-                            <p class="wow fadeInUp" data-wow-delay="0.6s">Our heart is simple: worship Jesus, make disciples, and bless our town through practical love, prayer, and consistent presence.</p>
+                            <h3 class="wow fadeInUp" data-wow-delay="0.2s">about us</h3>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">A church family in <span>Shenandoah</span> centered on Christ</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">We’re a welcoming, bilingual (English/Spanish) congregation. We believe the Bible is God’s Word, salvation is by grace through faith in Jesus, and the Holy Spirit empowers us to live and serve.</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Our heart is simple: worship Jesus, make disciples, and bless our town through practical love, prayer, and consistent presence.</p>
                         </div>
                         <!-- Section Title End -->
 
                         <!-- About Content List Start -->
                         <div class="about-content-body">
                             <!-- About List Item Start -->
-                            <div class="about-list-item wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="about-list-item wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="icon-box">
                                     <img src="{% static 'website/images/icon-about-list-1.svg' %}" alt="">
                                 </div>
@@ -325,7 +335,7 @@ html { scroll-behavior: smooth; } /* optional smooth scroll */
                             <!-- About List Item End -->
 
                             <!-- About List Item Start -->
-                            <div class="about-list-item wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="about-list-item wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="icon-box">
                                     <img src="{% static 'website/images/icon-about-list-2.svg' %}" alt="">
                                 </div>
@@ -336,7 +346,7 @@ html { scroll-behavior: smooth; } /* optional smooth scroll */
                             <!-- About List Item End -->
 
                             <!-- About List Item Start -->
-                            <div class="about-list-item wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="about-list-item wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="icon-box">
                                     <img src="{% static 'website/images/icon-about-list-3.svg' %}" alt="">
                                 </div>
@@ -347,7 +357,7 @@ html { scroll-behavior: smooth; } /* optional smooth scroll */
                             <!-- About List Item End -->
 
                             <!-- About List Item Start -->
-                            <div class="about-list-item wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="about-list-item wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="icon-box">
                                     <img src="{% static 'website/images/icon-about-list-4.svg' %}" alt="">
                                 </div>
@@ -361,7 +371,7 @@ html { scroll-behavior: smooth; } /* optional smooth scroll */
 
 
                         <!-- About Us Footer Start -->
-                        <div class="about-us-footer wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="about-us-footer wow fadeInUp" data-wow-delay="0.2s">
                             <a href="#services" class="btn-default">Our Services</a>
                         </div>
                         <!-- About Us Footer End -->
@@ -382,15 +392,15 @@ html { scroll-behavior: smooth; } /* optional smooth scroll */
                     <div class="verse-church-content">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <h3 class="wow fadeInUp" data-wow-delay="0.6s">SPEAKING REQUESTS</h3>
-                            <h2 class="wow fadeInUp" data-wow-delay="0.6s" data-cursor="-opaque" style="color: white;">Invite Pastor <span>Marcus to Speak </span></h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.25s">Interested in having Pastor Marcus speak at your church or event? His heart is to uplift believers, strengthen leaders, 
+                            <h3 class="wow fadeInUp" data-wow-delay="0.2s">SPEAKING REQUESTS</h3>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque" style="color: white;">Invite Pastor <span>Marcus to Speak </span></h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Interested in having Pastor Marcus speak at your church or event? His heart is to uplift believers, strengthen leaders, 
                                 and point every message back to the transforming power of Jesus Christ. Let’s partner together to impact lives for the Kingdom.</p>
                         </div>
                         <!-- Section Title End -->
 
                         <!-- Verse Church Btn Start -->
-                        <div class="verse-church-btn wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="verse-church-btn wow fadeInUp" data-wow-delay="0.2s">
                             <a href="https://forms.gle/E4t2t41K8aQNZXYd9" class="btn-default">Invite to Speak</a>
                         </div>
                         <!-- Verse Church Btn End -->
@@ -410,15 +420,15 @@ html { scroll-behavior: smooth; } /* optional smooth scroll */
                     <div class="event-content"style="margin-top: -3rem;">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <h3 class="wow fadeInUp" data-wow-delay="0.6s">LOCATION AND TIME</h3>
-                            <h2 class="wow fadeInUp" data-wow-delay="0.6s" data-cursor="-opaque">our services - <span>Sundays in Lebanon & Shenandoah</span></h2>
+                            <h3 class="wow fadeInUp" data-wow-delay="0.2s">LOCATION AND TIME</h3>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">our services - <span>Sundays in Lebanon & Shenandoah</span></h2>
                         </div>
                         <!-- Section Title End -->
 
                         <!-- Event Body Start -->
                         <div class="event-body">
                             <!-- Event Item Start -->
-                            <div class="event-item wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="event-item wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="icon-box">
                                     <i class="fa-solid fa-calendar-days"></i>
                                 </div>
@@ -430,7 +440,7 @@ html { scroll-behavior: smooth; } /* optional smooth scroll */
                             <!-- Event Item End -->
 
                             <!-- Event Item Start -->
-                            <div class="event-item wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="event-item wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="icon-box">
                                     <i class="fa-solid fa-location-dot"></i>
                                 </div>
@@ -445,14 +455,14 @@ html { scroll-behavior: smooth; } /* optional smooth scroll */
 
                         <!-- Event Footer Start -->
                         <div class="event-footer">
-                            <p class="wow fadeInUp" data-wow-delay="0.6s">Come experience worship, practical teaching, and a genuine community that loves Jesus. 
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Come experience worship, practical teaching, and a genuine community that loves Jesus. 
                                 Whether you visit our Lebanon or Shenandoah location, 
                                 you’ll find a place to belong, grow, and encounter God’s presence together.</p>
                         </div>
                         <!-- Event Footer End -->
 
                         <!-- Event Btn Start -->
-                        <div class="event-btn wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="event-btn wow fadeInUp" data-wow-delay="0.2s">
                             <a href="#ministries" class="btn-default"style="margin-top: -13px;
   margin-bottom: 40px;">Our Ministries</a>
                         </div>
@@ -462,7 +472,7 @@ html { scroll-behavior: smooth; } /* optional smooth scroll */
 
                 <div class="col-lg-6">
                     <div class="event-image">
-                        <figure class="image-anime wow fadeInUp" data-wow-delay="0.6s">
+                        <figure class="image-anime wow fadeInUp" data-wow-delay="0.2s">
                             <img src="{% static 'website/images/building3.png' %}" alt="">
                         </figure>
                     </div>
@@ -616,15 +626,15 @@ html { scroll-behavior: smooth; } /* optional smooth scroll */
                     <div class="verse-church-content">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <h3 class="wow fadeInUp" data-wow-delay="0.6s">PRAYER PETITIONS</h3>
-                            <h2 class="wow fadeInUp" data-wow-delay="0.6s" data-cursor="-opaque" style="color: white;">God Still <span>Answers Prayer</span></h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.25s">When life feels heavy, prayer reminds us that God is still in control. Share your need, 
+                            <h3 class="wow fadeInUp" data-wow-delay="0.2s">PRAYER PETITIONS</h3>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque" style="color: white;">God Still <span>Answers Prayer</span></h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">When life feels heavy, prayer reminds us that God is still in control. Share your need, 
                                 and let’s pray together for His strength, favor, and restoration.</p>
                         </div>
                         <!-- Section Title End -->
 
                         <!-- Verse Church Btn Start -->
-                        <div class="verse-church-btn wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="verse-church-btn wow fadeInUp" data-wow-delay="0.2s">
                             <a href="https://forms.gle/W2qPHKsqq7zbopo1A" class="btn-default">Send Your Prayer</a>
                         </div>
                         <!-- Verse Church Btn End -->
@@ -651,11 +661,11 @@ html { scroll-behavior: smooth; } /* optional smooth scroll */
         <div class="row">
             <div class="col-lg-6">
                 <!-- Highlighted Worship Item Start -->
-                    <div class="highlighted-worship-item wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="highlighted-worship-item wow fadeInUp" data-wow-delay="0.2s">
                     <!-- Highlighted Worship Featured Image Start -->
                     <div class="highlighted-worship-image">
                         <figure>
-                            <a href="#" class="image-anime wow fadeInUp" data-wow-delay="0.6s" data-cursor-text="View">
+                            <a href="#" class="image-anime wow fadeInUp" data-wow-delay="0.2s" data-cursor-text="View">
                                 <img src="https://i.pinimg.com/736x/a2/f2/90/a2f2909c9f5e6dfdfa70ed605d17fd43.jpg" alt="">
                             </a>
                         </figure>
@@ -681,7 +691,7 @@ html { scroll-behavior: smooth; } /* optional smooth scroll */
             <div class="col-lg-6">
                 <div class="worship-box">
                     <!-- Worship Item Start -->
-                    <div class="worship-item wow fadeInUp" data-wow-delay="0.25s">
+                    <div class="worship-item wow fadeInUp" data-wow-delay="0.2s">
                         <!-- Worship Image Start -->
                         <div class="worship-image">
                             <figure>
@@ -712,7 +722,7 @@ html { scroll-behavior: smooth; } /* optional smooth scroll */
                     <!-- Worship Item End -->
 
                     <!-- Worship Item Start -->
-                    <div class="worship-item wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="worship-item wow fadeInUp" data-wow-delay="0.2s">
                         <!-- Worship Image Start -->
                         <div class="worship-image">
                             <figure>
@@ -743,7 +753,7 @@ html { scroll-behavior: smooth; } /* optional smooth scroll */
                     <!-- Worship Item End -->
 
                     <!-- Worship Item Start -->
-                    <div class="worship-item wow fadeInUp" data-wow-delay="0.75s">
+                    <div class="worship-item wow fadeInUp" data-wow-delay="0.2s">
                         <!-- Worship Image Start -->
                         <div class="worship-image">
                             <figure>
@@ -879,14 +889,14 @@ html { scroll-behavior: smooth; } /* optional smooth scroll */
 
                         <!-- Mission Content Body Start -->
                         <div class="mission-content-body">
-                            <h3 class="wow fadeInUp" data-wow-delay="0.25s">We exist to glorify God by knowing Jesus and making Him known. He came to earth to offer himself for our sin and although He was killed, He defeated death by coming back to life when God raised Him. He ascended to heaven where He now sits at the right hand of God.</h3>
-                            <p class="wow fadeInUp" data-wow-delay="0.5s">We believe in one God—Father, Son, and Holy Spirit. We believe Jesus Christ is the Son of God and the perfect expression of God’s love. Through His life, death, and resurrection, He paid the full price for our sins. 
+                            <h3 class="wow fadeInUp" data-wow-delay="0.2s">We exist to glorify God by knowing Jesus and making Him known. He came to earth to offer himself for our sin and although He was killed, He defeated death by coming back to life when God raised Him. He ascended to heaven where He now sits at the right hand of God.</h3>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">We believe in one God—Father, Son, and Holy Spirit. We believe Jesus Christ is the Son of God and the perfect expression of God’s love. Through His life, death, and resurrection, He paid the full price for our sins. 
                                 Anyone who believes in Him receives forgiveness and eternal life, made new by the power of the Holy Spirit.</p>
                         </div>
                         <!-- Mission Content Body End -->
 
                         <!-- Mission Content Footer Start -->
-                        <div class="mission-content-footer wow fadeInUp" data-wow-delay="0.75s">
+                        <div class="mission-content-footer wow fadeInUp" data-wow-delay="0.2s">
                             <a href="#contact" class="btn-default">Contact Us</a>
                         </div>
                         <!-- Mission Content Footer End -->
@@ -996,7 +1006,7 @@ html { scroll-behavior: smooth; } /* optional smooth scroll */
                         <!-- About Footer Content Start -->
                         <div class="about-footer-content wow fadeInUp">
                             <p>Based in Shenandoah and Lebanon, PA, we are a bilingual, nondenominational church dedicated to serving our community.
-                                Services are held on Sundays at 10 a.m. at 38 E Oak St, Shenandoah, PA 17976, and at 1 p.m. at 1330 Pennsylvania Ave, Lebanon, PA.</p>
+Services are held on Sundays at 10 a.m. at 38 E Oak St, Shenandoah, PA 17976, and at 1 p.m. at 1330 Pennsylvania Ave, Lebanon, PA.</p>
                         </div>
                         <!-- Footer Social Links Start -->
                         <div class="footer-social-links">
@@ -1110,6 +1120,40 @@ html { scroll-behavior: smooth; } /* optional smooth scroll */
       if (window.WOW) { new WOW().init(); }
     });
   })(jQuery);
+  if (window.WOW) { new WOW().init(); }
+
+// --- Smooth scroll with slower duration (1500ms) ---
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (!target) return;
+
+    const headerOffset = 100; // adjust for navbar height if needed
+    const targetPosition = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+    const startPosition = window.scrollY;
+    const distance = targetPosition - startPosition;
+    const duration = 1500; // 1500ms = 1.5 seconds
+    let start = null;
+
+    function step(timestamp) {
+      if (!start) start = timestamp;
+      const progress = timestamp - start;
+      window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+      if (progress < duration) window.requestAnimationFrame(step);
+    }
+
+    function easeInOutCubic(t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return (c / 2) * t * t * t + b;
+      t -= 2;
+      return (c / 2) * (t * t * t + 2) + b;
+    }
+
+    window.requestAnimationFrame(step);
+  });
+});
+
 </script>
 </body>
 </html>
