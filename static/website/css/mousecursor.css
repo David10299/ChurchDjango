@@ -1,4 +1,8 @@
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+:root {
+	/* cursor dot color (change this to update the small dot) */
+	--cursor-dot: #dd3e3e; /* default orange */
+}
 .cb-cursor {
 	position: fixed;
 	top: 0;
@@ -26,7 +30,7 @@
 	-ms-transform: scale(0);
 	-o-transform: scale(0);
 	transform: scale(0);
-	background: #FE6035;
+	background: var(--cursor-dot, #dd3e3e);
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
